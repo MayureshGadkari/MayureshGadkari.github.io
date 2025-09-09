@@ -1,57 +1,70 @@
-/*!* Reset + base styles *!*/
-/** {*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  box-sizing: border-box;*/
-/*}*/
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    height: 500px;
+    padding-bottom: 150px;
+}
+.top-banner{
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+}
+.half-width{
+    width:40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+h1{
+    font-size: 50px;
+}
+h1 span{
+    color: orange;
+}
+.half-width img{
+    width: 100%;
+}
+.anchor-button{
+    text-decoration: none;
+    background: linear-gradient(45deg, lightsalmon, tomato);
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+p{
+    color: dimgray;
+}
+.dream-area{
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h2{
+    font-size: 40px;
+}
+.experience-area{
+    background-image: url("images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.experience-area h3{
+    color: orange;
+}
 
-/*body {*/
-/*  font-family: Arial, sans-serif;*/
-/*  line-height: 1.6;*/
-/*  background-color: #f4f4f4;*/
-/*  color: #333;*/
-/*  padding: 20px;*/
-/*}*/
-
-/*!* Layout *!*/
-/*header, section, footer {*/
-/*  max-width: 800px;*/
-/*  margin: 0 auto 40px;*/
-/*  padding: 20px;*/
-/*  background: white;*/
-/*  border-radius: 8px;*/
-/*  box-shadow: 0 0 10px rgba(0,0,0,0.05);*/
-/*}*/
-
-/*header {*/
-/*  text-align: center;*/
-/*}*/
-
-/*h1 {*/
-/*  font-size: 2.5em;*/
-/*  color: #333;*/
-/*}*/
-
-/*h2 {*/
-/*  margin-bottom: 10px;*/
-/*  color: #007acc;*/
-/*}*/
-
-/*.project {*/
-/*  margin-bottom: 20px;*/
-/*}*/
-
-/*a {*/
-/*  color: #007acc;*/
-/*  text-decoration: none;*/
-/*}*/
-
-/*a:hover {*/
-/*  text-decoration: underline;*/
-/*}*/
-
-/*footer {*/
-/*  text-align: center;*/
-/*  font-size: 0.9em;*/
-/*  color: #777;*/
-/*}*/
+.experience-area div{
+    box-shadow: 5px 7px 40px gray;
+    height: 80%;
+}
+#full-stack{
+    border-left: 7px solid tomato;
+}
+#baby-web{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue 100%, cyan 100%);
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
+}
