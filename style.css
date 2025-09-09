@@ -52,10 +52,31 @@ h2{
 .experience-area h3{
     color: orange;
 }
-
+.experience-area h2 {
+    margin-left: 90px; /* or padding-left: 40px; */
+}
 .experience-area div{
     box-shadow: 5px 7px 40px gray;
     height: 80%;
+}
+.experience-area .half-width {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* optional, shows pointer on hover */
+}
+
+.experience-area .half-width:hover {
+  transform: scale(1.05); /* pop effect by slightly enlarging */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* adds subtle shadow */
+  z-index: 10; /* make sure hovered card is above others */
+}
+.anchor-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.anchor-button:hover {
+  transform: scale(1.1); /* slightly bigger */
+  box-shadow: 0 8px 15px rgba(255, 99, 71, 0.6); /* soft glowing shadow */
 }
 #full-stack{
     border-left: 7px solid tomato;
@@ -69,4 +90,137 @@ footer p{
     text-align: center;
 }
 
-/* This is a comment in CSS */
+/*!* This is a comment in CSS *!*/
+
+
+/*!* ===== RESET & BASE STYLES ===== *!*/
+/*body {*/
+/*    margin: 0;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+/*p {*/
+/*    color: dimgray;*/
+/*}*/
+
+/*h1 {*/
+/*    font-size: 50px;*/
+/*}*/
+
+/*h1 span {*/
+/*    color: orange;*/
+/*}*/
+
+/*h2 {*/
+/*    font-size: 40px;*/
+/*}*/
+
+/*footer p {*/
+/*    text-align: center;*/
+/*}*/
+
+/*!* ===== LAYOUT SECTIONS ===== *!*/
+/*section {*/
+/*    min-height: 500px; !* changed from height to min-height for better mobile support *!*/
+/*    padding-bottom: 150px;*/
+/*}*/
+
+/*!* ===== TOP BANNER ===== *!*/
+/*.top-banner {*/
+/*    background-image: url("images/top-banner.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+/*!* ===== HALF-WIDTH COLUMNS ===== *!*/
+/*.half-width {*/
+/*    width: 40%;*/
+/*    float: left;*/
+/*    margin-left: 5%;*/
+/*    padding-left: 2%;*/
+/*}*/
+
+/*!* Make images inside half-width responsive *!*/
+/*.half-width img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    border-radius: 50%; !* optional for circular image *!*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*!* ===== BUTTON STYLE ===== *!*/
+/*.anchor-button {*/
+/*    text-decoration: none;*/
+/*    background: linear-gradient(45deg, lightsalmon, tomato);*/
+/*    padding: 10px 40px;*/
+/*    border-radius: 5px;*/
+/*    color: white;*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*!* ===== DREAM SECTION ===== *!*/
+/*.dream-area {*/
+/*    background-image: url("images/dream-bg.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: right;*/
+/*    background-size: contain;*/
+/*}*/
+
+/*!* ===== EXPERIENCE SECTION ===== *!*/
+/*.experience-area {*/
+/*    background-image: url("images/exp-bg.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: left;*/
+/*    background-size: contain;*/
+/*}*/
+
+/*.experience-area h3 {*/
+/*    color: orange;*/
+/*}*/
+
+/*.experience-area div {*/
+/*    box-shadow: 5px 7px 40px gray;*/
+/*    height: 80%;*/
+/*}*/
+
+/*!* Individual experience cards *!*/
+/*#full-stack {*/
+/*    border-left: 7px solid tomato;*/
+/*}*/
+
+/*#baby-web {*/
+/*    border-left: 7px solid;*/
+/*    border-image: linear-gradient(blue, cyan);*/
+/*    border-image-slice: 1;*/
+/*}*/
+
+/*!* ===== RESPONSIVE FIXES ===== *!*/
+/*@media screen and (max-width: 768px) {*/
+/*    .half-width {*/
+/*        width: 90%;*/
+/*        float: none;*/
+/*        margin: 0 auto;*/
+/*        padding: 10px;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    h1 {*/
+/*        font-size: 32px;*/
+/*    }*/
+
+/*    h2 {*/
+/*        font-size: 28px;*/
+/*    }*/
+
+/*    .top-banner,*/
+/*    .dream-area,*/
+/*    .experience-area {*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*    }*/
+/*}*/
+
+
+
+/* End of CSS */
