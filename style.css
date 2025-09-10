@@ -86,6 +86,10 @@ h2{
     border-image: linear-gradient(blue 100%, cyan 100%);
     border-image-slice: 1;
 }
+
+.projects-area h2 {
+    margin-left: 90px; /* or padding-left: 40px; */
+}
 footer p{
     text-align: center;
 }
